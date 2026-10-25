@@ -129,12 +129,12 @@
             <div class="flex items-center gap-3 ml-auto">
                 <a href="https://www.facebook.com/DungDesignTailor/" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-600/20 text-blue-300 border border-blue-500/30 hover:bg-blue-600/30 transition">
                     <i class="fa-brands fa-facebook"></i>
+            <!-- Right Utilities: Fanpage Link & Language Toggle -->
+            <div class="flex items-center gap-3 ml-auto">
+                <a href="https://www.facebook.com/DungDesignTailor/" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-600/20 text-blue-300 border border-blue-500/30 hover:bg-blue-600/30 transition">
+                    <i class="fa-brands fa-facebook"></i>
                     <span>FB: Sim Tailor (Dũng Design)</span>
                 </a>
-                <button onclick="openPhotoManagerModal()" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-gold-600/20 text-gold-300 border border-gold-500/40 hover:bg-gold-600/40 transition" title="Tải ảnh trực tiếp từ Fanpage hoặc máy tính lên trang web">
-                    <i class="fa-solid fa-images"></i>
-                    <span data-i18n="btn_photo_sync">Đổi Ảnh Fanpage</span>
-                </button>
                 <!-- Language Switcher -->
                 <div class="inline-flex rounded-full bg-charcoal-800 p-0.5 border border-gold-800/50">
                     <button id="lang-en" onclick="setLanguage('en')" class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold transition bg-gold-600 text-white">EN</button>
@@ -453,9 +453,6 @@
                         <div class="relative rounded-2xl overflow-hidden shadow-lg border-2 border-gold-200 group">
                             <img id="fanpage-about-1" src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80" 
                                  alt="Sim Tailor Bespoke Studio 23 Le Loi" class="w-full h-64 object-cover">
-                            <button onclick="triggerSinglePhotoUpload('fanpage-about-1')" class="absolute bottom-2 right-2 bg-black/70 hover:bg-gold-600 text-white text-[11px] px-2.5 py-1 rounded-full backdrop-blur-sm transition">
-                                <i class="fa-solid fa-camera mr-1"></i> Đổi ảnh
-                            </button>
                         </div>
                         <div class="bg-charcoal-900 text-white p-5 rounded-2xl shadow-lg border border-gold-500/40">
                             <div class="flex items-center gap-3">
@@ -472,9 +469,6 @@
                         <div class="relative rounded-2xl overflow-hidden shadow-lg border-2 border-gold-200">
                             <img id="fanpage-about-2" src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=800&q=80" 
                                  alt="Custom Suit Fitting at Sim Tailor" class="w-full h-64 object-cover">
-                            <button onclick="triggerSinglePhotoUpload('fanpage-about-2')" class="absolute bottom-2 right-2 bg-black/70 hover:bg-gold-600 text-white text-[11px] px-2.5 py-1 rounded-full backdrop-blur-sm transition">
-                                <i class="fa-solid fa-camera mr-1"></i> Đổi ảnh
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -580,15 +574,11 @@
                         Customer Lookbook & Fanpage Moments
                     </h2>
                     <p class="text-stone-600 text-sm sm:text-base mt-2 max-w-2xl" data-i18n="lookbook_sub">
-                        Authentic creations and client feedback posted on our official fanpage <strong>Sim Tailor (Dũng Design Bespoke Tailor)</strong> at 23 Lê Lợi, Hội An. Click <em>"Đổi ảnh từ máy"</em> on any card to upload your latest photos!
+                        Authentic creations and client feedback posted on our official fanpage <strong>Sim Tailor (Dũng Design Bespoke Tailor)</strong> at 23 Lê Lợi, Hội An.
                     </p>
                 </div>
                 <div class="flex flex-wrap items-center gap-3">
-                    <button onclick="openPhotoManagerModal()" class="px-4 py-2.5 rounded-full bg-gold-600 hover:bg-gold-500 text-white text-xs sm:text-sm font-semibold transition shadow flex items-center gap-2">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                        <span>Tải Ảnh Fanpage Từ Máy Lên Web</span>
-                    </button>
-                    <a href="https://www.facebook.com/DungDesignTailor/" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-full bg-charcoal-900 hover:bg-charcoal-800 text-white text-xs sm:text-sm font-semibold transition flex items-center gap-2">
+                    <a href="https://www.facebook.com/DungDesignTailor/" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-charcoal-900 hover:bg-gold-600 text-white text-xs sm:text-sm font-semibold transition flex items-center gap-2 shadow">
                         <i class="fa-brands fa-facebook-f text-blue-400"></i>
                         <span>Follow @DungDesignTailor</span>
                     </a>
@@ -1265,9 +1255,6 @@
         </a>
     </div>
 
-    <!-- ================= HIDDEN FILE INPUT FOR SINGLE PHOTO REPLACEMENT ================= -->
-    <input type="file" id="single-photo-input" accept="image/*" class="hidden" onchange="handleSinglePhotoSelected(event)">
-
     <!-- ================= BESPOKE CUSTOMIZER & ORDER MODAL ================= -->
     <div id="customizer-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-gold-300 p-6 sm:p-8">
@@ -1324,56 +1311,6 @@
                         <span>Order Now via WhatsApp (0906.440.883)</span>
                     </button>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ================= PHOTO MANAGER MODAL (SYNC / REPLACE FANPAGE PHOTOS) ================= -->
-    <div id="photo-manager-modal" class="fixed inset-0 z-50 hidden bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-gold-300 p-6 sm:p-8">
-            <div class="flex items-start justify-between gap-4 pb-4 border-b border-stone-200">
-                <div>
-                    <span class="text-[11px] font-bold uppercase tracking-widest text-gold-600">QUẢN LÝ HÌNH ẢNH FANPAGE SIM TAILOR</span>
-                    <h3 class="font-serif-luxury text-2xl font-bold text-charcoal-900 mt-0.5">Thêm Hoặc Đổi Ảnh Từ Fanpage Lên Website</h3>
-                    <p class="text-xs text-stone-500 mt-1">
-                        Bạn có thể tải ảnh từ máy tính (ảnh lưu từ trang <strong>facebook.com/DungDesignTailor</strong>) hoặc dán đường dẫn URL ảnh để hiển thị ngay trong Album Khách Hàng & Cửa Hàng.
-                    </p>
-                </div>
-                <button onclick="closePhotoManagerModal()" class="w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 flex items-center justify-center text-stone-600">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-
-            <form onsubmit="addNewFanpagePost(event)" class="space-y-4 mt-5 bg-ivory p-5 rounded-2xl border border-gold-200">
-                <h4 class="font-bold text-sm text-charcoal-900"><i class="fa-solid fa-plus-circle text-gold-600 mr-1.5"></i> Thêm Ảnh Mới Vào Fanpage Lookbook Trên Web</h4>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-semibold text-stone-700 mb-1">Chọn ảnh từ máy tính / điện thoại *</label>
-                        <input type="file" id="new-fp-file" accept="image/*" class="w-full text-xs file:mr-3 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-gold-600 file:text-white hover:file:bg-gold-500">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-stone-700 mb-1">Hoặc dán link ảnh (URL)</label>
-                        <input type="url" id="new-fp-url" placeholder="https://..." class="w-full px-3 py-2 rounded-xl border border-stone-300 text-xs focus:border-gold-600 focus:outline-none bg-white">
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-semibold text-stone-700 mb-1">Tiêu đề / Tên trang phục *</label>
-                        <input type="text" id="new-fp-title" required placeholder="VD: Bespoke Silk Dress - Khách Pháp" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 text-xs focus:border-gold-600 focus:outline-none bg-white">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-stone-700 mb-1">Nội dung bài đăng Fanpage</label>
-                        <input type="text" id="new-fp-caption" placeholder="🌱 Made by Sim Tailor 📍 23 Le Loi Hoi An 📞 +84906440883" class="w-full px-3.5 py-2 rounded-xl border border-stone-300 text-xs focus:border-gold-600 focus:outline-none bg-white">
-                    </div>
-                </div>
-                <button type="submit" class="px-6 py-2.5 rounded-full bg-charcoal-900 hover:bg-gold-600 text-white text-xs font-semibold transition shadow">
-                    <i class="fa-solid fa-check mr-1.5"></i> Đăng Ảnh Lên Trang Web
-                </button>
-            </form>
-
-            <div class="mt-5 text-xs text-stone-600 flex items-center justify-between">
-                <span>💡 Mẹo: Trên bất kỳ ảnh sản phẩm hoặc bài viết nào ngoài trang chủ, bạn cũng có thể bấm nút <strong>"Đổi ảnh"</strong> góc dưới ảnh để thay thế nhanh!</span>
-                <button onclick="resetDefaultData()" class="text-red-600 hover:underline font-medium shrink-0 ml-4">Khôi phục ảnh mặc định</button>
             </div>
         </div>
     </div>
@@ -1647,9 +1584,6 @@
                             <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-charcoal-900/85 text-gold-300 text-[11px] font-semibold backdrop-blur-sm">
                                 ${item.badge}
                             </span>
-                            <button onclick="triggerProductPhotoChange('${item.id}')" class="absolute bottom-2.5 right-2.5 bg-black/70 hover:bg-gold-600 text-white text-[11px] px-2.5 py-1 rounded-full backdrop-blur-sm opacity-90 hover:opacity-100 transition" title="Thay bằng ảnh thực tế từ Fanpage">
-                                <i class="fa-solid fa-camera mr-1"></i> Đổi ảnh
-                            </button>
                         </div>
                         <div class="p-5">
                             <div class="flex items-center justify-between text-xs text-gold-700 font-bold uppercase tracking-wider">
@@ -1688,9 +1622,6 @@
                                 <i class="fa-brands fa-facebook"></i>
                                 <span>${post.tag}</span>
                             </div>
-                            <button onclick="triggerFanpagePhotoChange('${post.id}')" class="absolute bottom-2.5 right-2.5 bg-black/75 hover:bg-gold-600 text-white text-[11px] px-3 py-1 rounded-full backdrop-blur-sm transition">
-                                <i class="fa-solid fa-camera mr-1"></i> Đổi ảnh từ máy
-                            </button>
                         </div>
                         <div class="p-4">
                             <h4 class="font-serif-luxury font-bold text-base text-charcoal-900">${post.title}</h4>
@@ -1705,106 +1636,6 @@
                     </div>
                 </div>
             `).join('');
-        }
-
-        // Photo Replacement Handlers (Allows user to replace any photo with actual Facebook downloaded photos)
-        let pendingPhotoUpdate = null;
-
-        function triggerSinglePhotoUpload(imgElementId) {
-            pendingPhotoUpdate = { type: 'element', id: imgElementId };
-            document.getElementById('single-photo-input').click();
-        }
-
-        function triggerProductPhotoChange(productId) {
-            pendingPhotoUpdate = { type: 'product', id: productId };
-            document.getElementById('single-photo-input').click();
-        }
-
-        function triggerFanpagePhotoChange(postId) {
-            pendingPhotoUpdate = { type: 'fanpage', id: postId };
-            document.getElementById('single-photo-input').click();
-        }
-
-        function handleSinglePhotoSelected(event) {
-            const file = event.target.files[0];
-            if (!file || !pendingPhotoUpdate) return;
-
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const dataUrl = e.target.result;
-                if (pendingPhotoUpdate.type === 'element') {
-                    const el = document.getElementById(pendingPhotoUpdate.id);
-                    if (el) el.src = dataUrl;
-                } else if (pendingPhotoUpdate.type === 'product') {
-                    const prod = products.find(p => p.id === pendingPhotoUpdate.id);
-                    if (prod) {
-                        prod.image = dataUrl;
-                        localStorage.setItem('simtailor_products', JSON.stringify(products));
-                        renderProducts(currentCategory);
-                    }
-                } else if (pendingPhotoUpdate.type === 'fanpage') {
-                    const post = fanpagePosts.find(p => p.id === pendingPhotoUpdate.id);
-                    if (post) {
-                        post.image = dataUrl;
-                        localStorage.setItem('simtailor_fanpage', JSON.stringify(fanpagePosts));
-                        renderFanpageLookbook();
-                    }
-                }
-                showToast('Đã cập nhật hình ảnh từ máy của bạn thành công!');
-            };
-            reader.readAsDataURL(file);
-            event.target.value = '';
-        }
-
-        function openPhotoManagerModal() {
-            document.getElementById('photo-manager-modal').classList.remove('hidden');
-        }
-        function closePhotoManagerModal() {
-            document.getElementById('photo-manager-modal').classList.add('hidden');
-        }
-
-        function addNewFanpagePost(e) {
-            e.preventDefault();
-            const fileInput = document.getElementById('new-fp-file');
-            const urlInput = document.getElementById('new-fp-url').value.trim();
-            const title = document.getElementById('new-fp-title').value.trim();
-            const caption = document.getElementById('new-fp-caption').value.trim() || '✨ Made by Sim Tailor 🪡🧵 📍 23 Lê Lợi, Hội An 📞 0906.440.883';
-
-            const savePost = (imgSrc) => {
-                fanpagePosts.unshift({
-                    id: 'fp_' + Date.now(),
-                    title: title,
-                    caption: caption,
-                    tag: 'Just now • FB: Sim Tailor',
-                    image: imgSrc
-                });
-                localStorage.setItem('simtailor_fanpage', JSON.stringify(fanpagePosts));
-                renderFanpageLookbook();
-                closePhotoManagerModal();
-                showToast('Đã thêm bài đăng & ảnh mới vào Fanpage Lookbook!');
-                scrollToSection('lookbook');
-            };
-
-            if (fileInput.files && fileInput.files[0]) {
-                const reader = new FileReader();
-                reader.onload = (ev) => savePost(ev.target.result);
-                reader.readAsDataURL(fileInput.files[0]);
-            } else if (urlInput) {
-                savePost(urlInput);
-            } else {
-                showToast('Vui lòng chọn tệp ảnh từ máy hoặc dán link ảnh!');
-            }
-        }
-
-        function resetDefaultData() {
-            localStorage.removeItem('simtailor_products');
-            localStorage.removeItem('simtailor_fanpage');
-            products = [...defaultProducts];
-            fanpagePosts = [...defaultFanpagePosts];
-            renderProducts('all');
-            renderFanpageLookbook();
-            closePhotoManagerModal();
-            showToast('Đã khôi phục bộ ảnh mặc định!');
         }
 
         // Hero Slider Logic
