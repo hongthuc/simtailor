@@ -141,21 +141,21 @@
 
     <!-- ================= MAIN HEADER & NAVIGATION (SIMONTHETAILOR LAYOUT) ================= -->
     <header id="main-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gold-200/60 transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20 sm:h-24">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-18 sm:h-24 py-2 sm:py-0 gap-2">
                 
                 <!-- Brand Logo -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-charcoal-900 border-2 border-gold-500 flex flex-col items-center justify-center text-gold-400 shadow-md group-hover:bg-gold-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-scissors text-lg sm:text-xl"></i>
-                        <span class="text-[8px] tracking-widest uppercase font-bold mt-0.5">EST. 2011</span>
+                <a href="#" class="flex items-center gap-2.5 sm:gap-3 group min-w-0">
+                    <div class="w-11 h-11 sm:w-14 sm:h-14 shrink-0 rounded-full bg-charcoal-900 border-2 border-gold-500 flex flex-col items-center justify-center text-gold-400 shadow-md group-hover:bg-gold-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-scissors text-base sm:text-xl"></i>
+                        <span class="text-[7px] sm:text-[8px] tracking-widest uppercase font-bold mt-0.5">EST. 2011</span>
                     </div>
-                    <div>
-                        <div class="flex items-center gap-2">
-                            <span class="font-serif-luxury text-2xl sm:text-3xl font-bold tracking-wider text-charcoal-900">SIM TAILOR</span>
+                    <div class="min-w-0">
+                        <div class="flex items-center gap-1.5 sm:gap-2">
+                            <span class="font-serif-luxury text-lg sm:text-3xl font-bold tracking-wider text-charcoal-900 truncate">SIM TAILOR</span>
                             <span class="hidden sm:inline-block text-[10px] font-semibold uppercase tracking-widest px-2 py-0.5 bg-gold-100 text-gold-800 rounded-full border border-gold-300">Hội An</span>
                         </div>
-                        <p class="text-[11px] sm:text-xs text-stone-500 tracking-widest uppercase font-medium">
+                        <p class="text-[10px] sm:text-xs text-stone-500 tracking-wider sm:tracking-widest uppercase font-medium leading-tight">
                             Bespoke Tailor Hoi An • <span class="text-gold-700 font-semibold">Dũng Design</span>
                         </p>
                     </div>
@@ -362,77 +362,77 @@
     </section>
 
     <!-- ================= 4 SIGNATURE PILLAR CARDS (EXACT SIMONTHETAILOR STRUCTURE) ================= -->
-    <section class="relative z-20 -mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <section class="relative z-20 -mt-10 sm:-mt-12 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
             <!-- Card 1: ABOUT US -->
-            <a href="#about" class="group bg-white rounded-2xl p-6 shadow-xl border border-gold-200/70 hover:border-gold-500 transition-all flex flex-col justify-between">
+            <a href="#about" class="group bg-white rounded-2xl p-3.5 sm:p-6 shadow-xl border border-gold-200/70 hover:border-gold-500 transition-all flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-gold-50 text-gold-600 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-600 group-hover:text-white transition">
+                    <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-gold-50 text-gold-600 flex items-center justify-center text-base sm:text-xl mb-2.5 sm:mb-4 group-hover:bg-gold-600 group-hover:text-white transition">
                         <i class="fa-solid fa-medal"></i>
                     </div>
-                    <p class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Sim Tailor Hoi An</p>
-                    <h3 class="font-serif-luxury text-xl font-bold text-charcoal-900 mt-1" data-i18n="pillar1_title">ABOUT US</h3>
-                    <p class="text-xs text-stone-600 mt-2 leading-relaxed" data-i18n="pillar1_desc">
+                    <p class="text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest text-gold-600 font-semibold">Sim Tailor Hoi An</p>
+                    <h3 class="font-serif-luxury text-sm sm:text-xl font-bold text-charcoal-900 mt-0.5 sm:mt-1" data-i18n="pillar1_title">ABOUT US</h3>
+                    <p class="text-[11px] sm:text-xs text-stone-600 mt-1.5 sm:mt-2 leading-snug sm:leading-relaxed" data-i18n="pillar1_desc">
                         15+ years of family bespoke craftsmanship at 23 Lê Lợi, Hội An. Formerly Dũng Design Bespoke Tailor.
                     </p>
                 </div>
-                <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs font-semibold text-gold-700 group-hover:translate-x-1 transition-transform">
+                <div class="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] sm:text-xs font-semibold text-gold-700 group-hover:translate-x-1 transition-transform">
                     <span data-i18n="read_more">Discover Our Story</span>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-right text-[10px] sm:text-xs"></i>
                 </div>
             </a>
 
             <!-- Card 2: WHAT WE DO? -->
-            <a href="#process" class="group bg-white rounded-2xl p-6 shadow-xl border border-gold-200/70 hover:border-gold-500 transition-all flex flex-col justify-between">
+            <a href="#process" class="group bg-white rounded-2xl p-3.5 sm:p-6 shadow-xl border border-gold-200/70 hover:border-gold-500 transition-all flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-gold-50 text-gold-600 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-600 group-hover:text-white transition">
+                    <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-gold-50 text-gold-600 flex items-center justify-center text-base sm:text-xl mb-2.5 sm:mb-4 group-hover:bg-gold-600 group-hover:text-white transition">
                         <i class="fa-solid fa-scissors"></i>
                     </div>
-                    <p class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Our Process</p>
-                    <h3 class="font-serif-luxury text-xl font-bold text-charcoal-900 mt-1" data-i18n="pillar2_title">WHAT WE DO?</h3>
-                    <p class="text-xs text-stone-600 mt-2 leading-relaxed" data-i18n="pillar2_desc">
+                    <p class="text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest text-gold-600 font-semibold">Our Process</p>
+                    <h3 class="font-serif-luxury text-sm sm:text-xl font-bold text-charcoal-900 mt-0.5 sm:mt-1" data-i18n="pillar2_title">WHAT WE DO?</h3>
+                    <p class="text-[11px] sm:text-xs text-stone-600 mt-1.5 sm:mt-2 leading-snug sm:leading-relaxed" data-i18n="pillar2_desc">
                         Custom suits, silk dresses & ensembles tailored in 24–48 hours with multiple fittings & worldwide shipping.
                     </p>
                 </div>
-                <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs font-semibold text-gold-700 group-hover:translate-x-1 transition-transform">
+                <div class="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] sm:text-xs font-semibold text-gold-700 group-hover:translate-x-1 transition-transform">
                     <span data-i18n="see_process">See 4-Step Process</span>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-right text-[10px] sm:text-xs"></i>
                 </div>
             </a>
 
             <!-- Card 3: HOW TO MEASURE -->
-            <a href="#measure" class="group bg-white rounded-2xl p-6 shadow-xl border border-gold-200/70 hover:border-gold-500 transition-all flex flex-col justify-between">
+            <a href="#measure" class="group bg-white rounded-2xl p-3.5 sm:p-6 shadow-xl border border-gold-200/70 hover:border-gold-500 transition-all flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-gold-50 text-gold-600 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-600 group-hover:text-white transition">
+                    <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-gold-50 text-gold-600 flex items-center justify-center text-base sm:text-xl mb-2.5 sm:mb-4 group-hover:bg-gold-600 group-hover:text-white transition">
                         <i class="fa-solid fa-ruler-combined"></i>
                     </div>
-                    <p class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Remote & In-Store</p>
-                    <h3 class="font-serif-luxury text-xl font-bold text-charcoal-900 mt-1" data-i18n="pillar3_title">HOW TO MEASURE</h3>
-                    <p class="text-xs text-stone-600 mt-2 leading-relaxed" data-i18n="pillar3_desc">
+                    <p class="text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest text-gold-600 font-semibold">Remote & In-Store</p>
+                    <h3 class="font-serif-luxury text-sm sm:text-xl font-bold text-charcoal-900 mt-0.5 sm:mt-1" data-i18n="pillar3_title">HOW TO MEASURE</h3>
+                    <p class="text-[11px] sm:text-xs text-stone-600 mt-1.5 sm:mt-2 leading-snug sm:leading-relaxed" data-i18n="pillar3_desc">
                         Interactive body measurement guide to send your exact size online for worldwide custom tailoring.
                     </p>
                 </div>
-                <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs font-semibold text-gold-700 group-hover:translate-x-1 transition-transform">
+                <div class="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] sm:text-xs font-semibold text-gold-700 group-hover:translate-x-1 transition-transform">
                     <span data-i18n="open_guide">Open Measurement Tool</span>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-right text-[10px] sm:text-xs"></i>
                 </div>
             </a>
 
             <!-- Card 4: CUSTOMER LOOKBOOK -->
-            <a href="#lookbook" class="group bg-white rounded-2xl p-6 shadow-xl border border-gold-200/70 hover:border-gold-500 transition-all flex flex-col justify-between">
+            <a href="#lookbook" class="group bg-white rounded-2xl p-3.5 sm:p-6 shadow-xl border border-gold-200/70 hover:border-gold-500 transition-all flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-gold-50 text-gold-600 flex items-center justify-center text-xl mb-4 group-hover:bg-gold-600 group-hover:text-white transition">
+                    <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-gold-50 text-gold-600 flex items-center justify-center text-base sm:text-xl mb-2.5 sm:mb-4 group-hover:bg-gold-600 group-hover:text-white transition">
                         <i class="fa-solid fa-camera-retro"></i>
                     </div>
-                    <p class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Fanpage Gallery</p>
-                    <h3 class="font-serif-luxury text-xl font-bold text-charcoal-900 mt-1" data-i18n="pillar4_title">CUSTOMER LOOKBOOK</h3>
-                    <p class="text-xs text-stone-600 mt-2 leading-relaxed" data-i18n="pillar4_desc">
+                    <p class="text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest text-gold-600 font-semibold">Fanpage Gallery</p>
+                    <h3 class="font-serif-luxury text-sm sm:text-xl font-bold text-charcoal-900 mt-0.5 sm:mt-1" data-i18n="pillar4_title">CUSTOMER LOOKBOOK</h3>
+                    <p class="text-[11px] sm:text-xs text-stone-600 mt-1.5 sm:mt-2 leading-snug sm:leading-relaxed" data-i18n="pillar4_desc">
                         Real photos & stories from our Facebook page: happy clients from France, Iceland, Denmark & Vietnam.
                     </p>
                 </div>
-                <div class="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs font-semibold text-gold-700 group-hover:translate-x-1 transition-transform">
+                <div class="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] sm:text-xs font-semibold text-gold-700 group-hover:translate-x-1 transition-transform">
                     <span data-i18n="view_photos">View Fanpage Photos</span>
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-arrow-right text-[10px] sm:text-xs"></i>
                 </div>
             </a>
         </div>
@@ -486,23 +486,23 @@
                 </p>
 
                 <!-- Key Highlights Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-gold-200/70 shadow-sm">
-                        <div class="w-9 h-9 rounded-lg bg-gold-100 text-gold-700 flex items-center justify-center shrink-0 mt-0.5">
-                            <i class="fa-solid fa-clock"></i>
+                <div class="grid grid-cols-2 gap-2.5 sm:gap-4 pt-2">
+                    <div class="flex items-start gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-xl bg-white border border-gold-200/70 shadow-sm">
+                        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-gold-100 text-gold-700 flex items-center justify-center shrink-0 mt-0.5">
+                            <i class="fa-solid fa-clock text-xs sm:text-sm"></i>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-sm text-charcoal-900">Express 24–48h Turnaround</h4>
-                            <p class="text-xs text-stone-500 mt-0.5">Including 2–3 personal fittings & complimentary hotel delivery in Hoi An.</p>
+                            <h4 class="font-semibold text-xs sm:text-sm text-charcoal-900">Express 24–48h Turnaround</h4>
+                            <p class="text-[11px] sm:text-xs text-stone-500 mt-0.5">Including 2–3 personal fittings & complimentary hotel delivery in Hoi An.</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-gold-200/70 shadow-sm">
-                        <div class="w-9 h-9 rounded-lg bg-gold-100 text-gold-700 flex items-center justify-center shrink-0 mt-0.5">
-                            <i class="fa-solid fa-earth-americas"></i>
+                    <div class="flex items-start gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-xl bg-white border border-gold-200/70 shadow-sm">
+                        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-gold-100 text-gold-700 flex items-center justify-center shrink-0 mt-0.5">
+                            <i class="fa-solid fa-earth-americas text-xs sm:text-sm"></i>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-sm text-charcoal-900">Worldwide Shipping</h4>
-                            <p class="text-xs text-stone-500 mt-0.5">We store your measurements so you can order more suits & dresses from home.</p>
+                            <h4 class="font-semibold text-xs sm:text-sm text-charcoal-900">Worldwide Shipping</h4>
+                            <p class="text-[11px] sm:text-xs text-stone-500 mt-0.5">We store your measurements so you can order more suits & dresses from home.</p>
                         </div>
                     </div>
                 </div>
@@ -535,22 +535,22 @@
 
             <!-- Category Tabs (Matching simonthetailor.com: All | Men's Clothes | Women luxurious Clothes + Family Sets) -->
             <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-8">
-                <button onclick="filterShop('all')" id="tab-all" class="shop-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-charcoal-900 text-white shadow-md" data-i18n="cat_all">
+                <button onclick="filterShop('all')" id="tab-all" class="shop-tab px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-charcoal-900 text-white shadow-md" data-i18n="cat_all">
                     All Collection
                 </button>
-                <button onclick="filterShop('men')" id="tab-men" class="shop-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-stone-100 text-charcoal-800 hover:bg-gold-100" data-i18n="cat_men">
+                <button onclick="filterShop('men')" id="tab-men" class="shop-tab px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-stone-100 text-charcoal-800 hover:bg-gold-100" data-i18n="cat_men">
                     Men's Clothes
                 </button>
-                <button onclick="filterShop('women')" id="tab-women" class="shop-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-stone-100 text-charcoal-800 hover:bg-gold-100" data-i18n="cat_women">
+                <button onclick="filterShop('women')" id="tab-women" class="shop-tab px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-stone-100 text-charcoal-800 hover:bg-gold-100" data-i18n="cat_women">
                     Women Luxurious Clothes
                 </button>
-                <button onclick="filterShop('family')" id="tab-family" class="shop-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-stone-100 text-charcoal-800 hover:bg-gold-100" data-i18n="cat_family">
+                <button onclick="filterShop('family')" id="tab-family" class="shop-tab px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-stone-100 text-charcoal-800 hover:bg-gold-100" data-i18n="cat_family">
                     Couple & Family Sets (Fanpage)
                 </button>
             </div>
 
-            <!-- Products Grid (Rendered dynamically via JS for filtering) -->
-            <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+            <!-- Products Grid (Rendered dynamically via JS for filtering - 2 columns on mobile) -->
+            <div id="products-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mt-8 sm:mt-10">
                 <!-- Populated by JavaScript -->
             </div>
         </div>
@@ -558,8 +558,8 @@
 
     <!-- ================= FANPAGE LOOKBOOK & LIVE FEED (DUNG DESIGN TAILOR / SIM TAILOR) ================= -->
     <section id="lookbook" class="py-20 bg-ivory">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-12">
                 <div>
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold mb-3">
                         <i class="fa-brands fa-facebook"></i>
@@ -580,8 +580,8 @@
                 </div>
             </div>
 
-            <!-- Fanpage Posts Grid -->
-            <div id="fanpage-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Fanpage Posts Grid (2 columns on mobile) -->
+            <div id="fanpage-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
                 <!-- Populated by JavaScript from real Fanpage Posts -->
             </div>
         </div>
@@ -589,7 +589,7 @@
 
     <!-- ================= OUR PROCESS SECTION (4 STEPS IN 24-48H) ================= -->
     <section id="process" class="py-20 bg-charcoal-900 text-white relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto space-y-3">
                 <p class="text-xs uppercase tracking-widest text-gold-400 font-semibold">HOW WE CRAFT YOUR GARMENT</p>
                 <h2 class="font-serif-luxury text-3xl sm:text-5xl font-bold" data-i18n="process_heading">Our Bespoke Process</h2>
@@ -598,51 +598,51 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mt-10 sm:mt-12">
                 <!-- Step 1 -->
-                <div class="bg-charcoal-800/90 border border-gold-500/30 rounded-2xl p-6 relative group hover:border-gold-400 transition">
-                    <span class="absolute top-4 right-5 font-serif-luxury text-4xl font-bold text-gold-500/20 group-hover:text-gold-500/40 transition">01</span>
-                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl mb-5">
+                <div class="bg-charcoal-800/90 border border-gold-500/30 rounded-2xl p-4 sm:p-6 relative group hover:border-gold-400 transition">
+                    <span class="absolute top-3 right-3 sm:top-4 sm:right-5 font-serif-luxury text-2xl sm:text-4xl font-bold text-gold-500/20 group-hover:text-gold-500/40 transition">01</span>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-base sm:text-xl mb-3 sm:mb-5">
                         <i class="fa-solid fa-swatchbook"></i>
                     </div>
-                    <h3 class="font-serif-luxury text-xl font-bold text-white">Style & Fabric Consultation</h3>
-                    <p class="text-xs text-stone-300 mt-2.5 leading-relaxed">
+                    <h3 class="font-serif-luxury text-sm sm:text-xl font-bold text-white">Style & Fabric Consultation</h3>
+                    <p class="text-[11px] sm:text-xs text-stone-300 mt-1.5 sm:mt-2.5 leading-snug sm:leading-relaxed">
                         Choose from 500+ premium fabrics (Mulberry Silk, Cashmere Wool, Linen, Egyptian Cotton) and customize lapels, buttons, linings, and monograms with Master Tailor Sim.
                     </p>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="bg-charcoal-800/90 border border-gold-500/30 rounded-2xl p-6 relative group hover:border-gold-400 transition">
-                    <span class="absolute top-4 right-5 font-serif-luxury text-4xl font-bold text-gold-500/20 group-hover:text-gold-500/40 transition">02</span>
-                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl mb-5">
+                <div class="bg-charcoal-800/90 border border-gold-500/30 rounded-2xl p-4 sm:p-6 relative group hover:border-gold-400 transition">
+                    <span class="absolute top-3 right-3 sm:top-4 sm:right-5 font-serif-luxury text-2xl sm:text-4xl font-bold text-gold-500/20 group-hover:text-gold-500/40 transition">02</span>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-base sm:text-xl mb-3 sm:mb-5">
                         <i class="fa-solid fa-ruler-vertical"></i>
                     </div>
-                    <h3 class="font-serif-luxury text-xl font-bold text-white">25-Point Body Measurement</h3>
-                    <p class="text-xs text-stone-300 mt-2.5 leading-relaxed">
+                    <h3 class="font-serif-luxury text-sm sm:text-xl font-bold text-white">25-Point Body Measurement</h3>
+                    <p class="text-[11px] sm:text-xs text-stone-300 mt-1.5 sm:mt-2.5 leading-snug sm:leading-relaxed">
                         We take over 25 precise anatomical measurements and posture notes so your suit or dress drapes naturally around your shoulders and waist.
                     </p>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="bg-charcoal-800/90 border border-gold-500/30 rounded-2xl p-6 relative group hover:border-gold-400 transition">
-                    <span class="absolute top-4 right-5 font-serif-luxury text-4xl font-bold text-gold-500/20 group-hover:text-gold-500/40 transition">03</span>
-                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl mb-5">
+                <div class="bg-charcoal-800/90 border border-gold-500/30 rounded-2xl p-4 sm:p-6 relative group hover:border-gold-400 transition">
+                    <span class="absolute top-3 right-3 sm:top-4 sm:right-5 font-serif-luxury text-2xl sm:text-4xl font-bold text-gold-500/20 group-hover:text-gold-500/40 transition">03</span>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-base sm:text-xl mb-3 sm:mb-5">
                         <i class="fa-solid fa-user-tie"></i>
                     </div>
-                    <h3 class="font-serif-luxury text-xl font-bold text-white">First & Second Fittings</h3>
-                    <p class="text-xs text-stone-300 mt-2.5 leading-relaxed">
+                    <h3 class="font-serif-luxury text-sm sm:text-xl font-bold text-white">First & Second Fittings</h3>
+                    <p class="text-[11px] sm:text-xs text-stone-300 mt-1.5 sm:mt-2.5 leading-snug sm:leading-relaxed">
                         Within 12–24 hours, try on your garment at 23 Lê Lợi (or at your hotel). Master Tailor Sim pins and refines every millimeter for a second-skin fit.
                     </p>
                 </div>
 
                 <!-- Step 4 -->
-                <div class="bg-charcoal-800/90 border border-gold-500/30 rounded-2xl p-6 relative group hover:border-gold-400 transition">
-                    <span class="absolute top-4 right-5 font-serif-luxury text-4xl font-bold text-gold-500/20 group-hover:text-gold-500/40 transition">04</span>
-                    <div class="w-12 h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-xl mb-5">
+                <div class="bg-charcoal-800/90 border border-gold-500/30 rounded-2xl p-4 sm:p-6 relative group hover:border-gold-400 transition">
+                    <span class="absolute top-3 right-3 sm:top-4 sm:right-5 font-serif-luxury text-2xl sm:text-4xl font-bold text-gold-500/20 group-hover:text-gold-500/40 transition">04</span>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center text-base sm:text-xl mb-3 sm:mb-5">
                         <i class="fa-solid fa-plane-circle-check"></i>
                     </div>
-                    <h3 class="font-serif-luxury text-xl font-bold text-white">Pickup or Worldwide Delivery</h3>
-                    <p class="text-xs text-stone-300 mt-2.5 leading-relaxed">
+                    <h3 class="font-serif-luxury text-sm sm:text-xl font-bold text-white">Pickup or Worldwide Delivery</h3>
+                    <p class="text-[11px] sm:text-xs text-stone-300 mt-1.5 sm:mt-2.5 leading-snug sm:leading-relaxed">
                         Collect your pressed garment in a luxury suit bag, enjoy free hotel drop-off, or let us ship directly to your home country via DHL/FedEx.
                     </p>
                 </div>
@@ -1561,9 +1561,9 @@
                 const btn = document.getElementById('tab-' + cat);
                 if (btn) {
                     if (cat === category) {
-                        btn.className = 'shop-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-charcoal-900 text-white shadow-md';
+                        btn.className = 'shop-tab px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-charcoal-900 text-white shadow-md';
                     } else {
-                        btn.className = 'shop-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-stone-100 text-charcoal-800 hover:bg-gold-100';
+                        btn.className = 'shop-tab px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-semibold transition bg-stone-100 text-charcoal-800 hover:bg-gold-100';
                     }
                 }
             });
@@ -1571,27 +1571,27 @@
             grid.innerHTML = filtered.map(item => `
                 <div class="card-zoom bg-ivory rounded-2xl overflow-hidden border border-gold-200/80 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
                     <div>
-                        <div class="relative h-72 overflow-hidden bg-stone-200">
+                        <div class="relative h-44 sm:h-72 overflow-hidden bg-stone-200">
                             <img id="prod-img-${item.id}" src="${item.image}" 
                                  onerror="this.src='https://placehold.co/600x750/1f1e1c/c28a3b?text=${encodeURIComponent(item.title)}'"
                                  alt="${item.title}" class="zoom-img w-full h-full object-cover">
-                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-charcoal-900/85 text-gold-300 text-[11px] font-semibold backdrop-blur-sm">
+                            <span class="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full bg-charcoal-900/85 text-gold-300 text-[9px] sm:text-[11px] font-semibold backdrop-blur-sm">
                                 ${item.badge}
                             </span>
                         </div>
-                        <div class="p-5">
-                            <div class="flex items-center justify-between text-xs text-gold-700 font-bold uppercase tracking-wider">
-                                <span>${item.category === 'men' ? "Men's Bespoke" : item.category === 'women' ? "Women Luxurious" : "Family & Couple"}</span>
-                                <span class="text-sm text-charcoal-900">${item.price}</span>
+                        <div class="p-3 sm:p-5">
+                            <div class="flex flex-wrap items-center justify-between gap-1 text-[10px] sm:text-xs text-gold-700 font-bold uppercase tracking-wider">
+                                <span class="truncate">${item.category === 'men' ? "Men's" : item.category === 'women' ? "Women's" : "Family"}</span>
+                                <span class="text-xs sm:text-sm text-charcoal-900">${item.price}</span>
                             </div>
-                            <h3 class="font-serif-luxury text-lg font-bold text-charcoal-900 mt-1">${item.title}</h3>
-                            <p class="text-xs text-stone-600 mt-2 leading-relaxed line-clamp-2">${item.desc}</p>
+                            <h3 class="font-serif-luxury text-sm sm:text-lg font-bold text-charcoal-900 mt-1 leading-snug line-clamp-2">${item.title}</h3>
+                            <p class="text-[11px] sm:text-xs text-stone-600 mt-1.5 sm:mt-2 leading-snug sm:leading-relaxed line-clamp-2">${item.desc}</p>
                         </div>
                     </div>
-                    <div class="px-5 pb-5 pt-2 flex items-center gap-2">
-                        <button onclick="openCustomizerModal('${item.id}')" class="w-full py-2.5 rounded-xl bg-charcoal-900 hover:bg-gold-600 text-white text-xs font-semibold tracking-wider uppercase transition flex items-center justify-center gap-1.5">
+                    <div class="px-3 pb-3 sm:px-5 sm:pb-5 pt-1 flex items-center gap-2">
+                        <button onclick="openCustomizerModal('${item.id}')" class="w-full py-2 sm:py-2.5 rounded-xl bg-charcoal-900 hover:bg-gold-600 text-white text-[11px] sm:text-xs font-semibold tracking-wider uppercase transition flex items-center justify-center gap-1.5">
                             <i class="fa-solid fa-sliders"></i>
-                            <span>Customize & Order</span>
+                            <span>Order</span>
                         </button>
                     </div>
                 </div>
@@ -1608,24 +1608,24 @@
             grid.innerHTML = fanpagePosts.map(post => `
                 <div class="bg-white rounded-2xl overflow-hidden border border-gold-200/80 shadow-sm hover:shadow-xl transition flex flex-col justify-between group">
                     <div>
-                        <div class="relative h-72 overflow-hidden bg-stone-200">
+                        <div class="relative h-44 sm:h-72 overflow-hidden bg-stone-200">
                             <img id="fp-img-${post.id}" src="${post.image}" 
                                  onerror="this.src='https://placehold.co/600x750/1f1e1c/c28a3b?text=Sim+Tailor+Fanpage'"
                                  alt="${post.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                            <div class="absolute top-3 left-3 bg-blue-600/90 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1 backdrop-blur-sm">
-                                <i class="fa-brands fa-facebook"></i>
-                                <span>${post.tag}</span>
+                            <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-blue-600/90 text-white text-[9px] sm:text-[10px] font-semibold px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full flex items-center gap-1 backdrop-blur-sm max-w-[90%]">
+                                <i class="fa-brands fa-facebook shrink-0"></i>
+                                <span class="truncate">${post.tag}</span>
                             </div>
                         </div>
-                        <div class="p-4">
-                            <h4 class="font-serif-luxury font-bold text-base text-charcoal-900">${post.title}</h4>
-                            <p class="text-xs text-stone-600 mt-1.5 leading-relaxed">${post.caption}</p>
+                        <div class="p-3 sm:p-4">
+                            <h4 class="font-serif-luxury font-bold text-xs sm:text-base text-charcoal-900 leading-snug line-clamp-2">${post.title}</h4>
+                            <p class="text-[11px] sm:text-xs text-stone-600 mt-1 sm:mt-1.5 leading-snug sm:leading-relaxed line-clamp-3">${post.caption}</p>
                         </div>
                     </div>
-                    <div class="px-4 pb-4 pt-2 border-t border-stone-100 flex items-center justify-between text-[11px] text-gold-700 font-semibold">
-                        <span>📍 23 Lê Lợi, Hội An</span>
-                        <a href="https://wa.me/84906440883?text=${encodeURIComponent('Hi Sim Tailor! I love this outfit from your Fanpage: ' + post.title)}" target="_blank" class="hover:underline flex items-center gap-1 text-green-700">
-                            <i class="fa-brands fa-whatsapp"></i> Order This Look
+                    <div class="px-3 pb-3 sm:px-4 sm:pb-4 pt-2 border-t border-stone-100 flex items-center justify-between text-[10px] sm:text-[11px] text-gold-700 font-semibold">
+                        <span class="truncate">📍 23 Lê Lợi</span>
+                        <a href="https://wa.me/84906440883?text=${encodeURIComponent('Hi Sim Tailor! I love this outfit from your Fanpage: ' + post.title)}" target="_blank" class="hover:underline flex items-center gap-1 text-green-700 shrink-0">
+                            <i class="fa-brands fa-whatsapp"></i> Order
                         </a>
                     </div>
                 </div>
