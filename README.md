@@ -97,6 +97,23 @@
         .pulse-gold {
             animation: pulse-ring 2s infinite;
         }
+        /* Ép cứng chia 2 cột trên giao diện điện thoại cho Sản phẩm, Lookbook và Thẻ danh mục */
+        .mobile-two-cols {
+            display: grid !important;
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+            gap: 0.75rem !important;
+        }
+        @media (min-width: 640px) {
+            .mobile-two-cols {
+                gap: 1.25rem !important;
+            }
+        }
+        @media (min-width: 1024px) {
+            .mobile-two-cols {
+                grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+                gap: 1.5rem !important;
+            }
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-gold-500 selection:text-white">
@@ -142,27 +159,19 @@
     <!-- ================= MAIN HEADER & NAVIGATION (SIMONTHETAILOR LAYOUT) ================= -->
     <header id="main-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gold-200/60 transition-all">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-18 sm:h-24 py-2 sm:py-0 gap-2">
+            <div class="flex items-center justify-between h-16 sm:h-20 gap-2">
                 
-                <!-- Brand Logo -->
-                <a href="#" class="flex items-center gap-2.5 sm:gap-3 group min-w-0">
-                    <div class="w-11 h-11 sm:w-14 sm:h-14 shrink-0 rounded-full bg-charcoal-900 border-2 border-gold-500 flex flex-col items-center justify-center text-gold-400 shadow-md group-hover:bg-gold-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-scissors text-base sm:text-xl"></i>
-                        <span class="text-[7px] sm:text-[8px] tracking-widest uppercase font-bold mt-0.5">EST. 2011</span>
+                <!-- Brand Logo (Đã xóa dòng chữ phụ bị lỗi tràn dọc trên máy tính & cố định khung tròn) -->
+                <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 shrink-0 rounded-full bg-charcoal-900 border-2 border-gold-500 flex flex-col items-center justify-center text-gold-400 shadow-md group-hover:bg-gold-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-scissors text-sm sm:text-base"></i>
+                        <span class="text-[7px] tracking-widest uppercase font-bold mt-0.5 leading-none">EST. 2011</span>
                     </div>
-                    <div class="min-w-0">
-                        <div class="flex items-center gap-1.5 sm:gap-2">
-                            <span class="font-serif-luxury text-lg sm:text-3xl font-bold tracking-wider text-charcoal-900 truncate">SIM TAILOR</span>
-                            <span class="hidden sm:inline-block text-[10px] font-semibold uppercase tracking-widest px-2 py-0.5 bg-gold-100 text-gold-800 rounded-full border border-gold-300">Hội An</span>
-                        </div>
-                        <p class="text-[10px] sm:text-xs text-stone-500 tracking-wider sm:tracking-widest uppercase font-medium leading-tight">
-                            Bespoke Tailor Hoi An • <span class="text-gold-700 font-semibold">Dũng Design</span>
-                        </p>
-                    </div>
+                    <span class="font-serif-luxury text-xl sm:text-2xl xl:text-3xl font-bold tracking-wider text-charcoal-900 whitespace-nowrap shrink-0">SIM TAILOR</span>
                 </a>
 
                 <!-- Desktop Navigation Menu (Exact structure of simonthetailor.com) -->
-                <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-charcoal-800">
+                <nav class="hidden lg:flex items-center gap-4 xl:gap-6 text-xs xl:text-sm font-medium text-charcoal-800 whitespace-nowrap">
                     <a href="#home" class="text-gold-600 font-semibold hover:text-gold-700 transition" data-i18n="nav_home">Home</a>
                     <a href="#about" class="hover:text-gold-600 transition" data-i18n="nav_about">About Us</a>
                     <a href="#process" class="hover:text-gold-600 transition" data-i18n="nav_process">Our Process</a>
@@ -363,7 +372,7 @@
 
     <!-- ================= 4 SIGNATURE PILLAR CARDS (EXACT SIMONTHETAILOR STRUCTURE) ================= -->
     <section class="relative z-20 -mt-10 sm:-mt-12 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+        <div class="mobile-two-cols grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
             <!-- Card 1: ABOUT US -->
             <a href="#about" class="group bg-white rounded-2xl p-3.5 sm:p-6 shadow-xl border border-gold-200/70 hover:border-gold-500 transition-all flex flex-col justify-between">
                 <div>
@@ -550,7 +559,7 @@
             </div>
 
             <!-- Products Grid (Rendered dynamically via JS for filtering - 2 columns on mobile) -->
-            <div id="products-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mt-8 sm:mt-10">
+            <div id="products-grid" class="mobile-two-cols grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mt-8 sm:mt-10">
                 <!-- Populated by JavaScript -->
             </div>
         </div>
@@ -581,7 +590,7 @@
             </div>
 
             <!-- Fanpage Posts Grid (2 columns on mobile) -->
-            <div id="fanpage-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            <div id="fanpage-grid" class="mobile-two-cols grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
                 <!-- Populated by JavaScript from real Fanpage Posts -->
             </div>
         </div>
@@ -598,7 +607,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mt-10 sm:mt-12">
+            <div class="mobile-two-cols grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mt-10 sm:mt-12">
                 <!-- Step 1 -->
                 <div class="bg-charcoal-800/90 border border-gold-500/30 rounded-2xl p-4 sm:p-6 relative group hover:border-gold-400 transition">
                     <span class="absolute top-3 right-3 sm:top-4 sm:right-5 font-serif-luxury text-2xl sm:text-4xl font-bold text-gold-500/20 group-hover:text-gold-500/40 transition">01</span>
@@ -1569,9 +1578,9 @@
             });
 
             grid.innerHTML = filtered.map(item => `
-                <div class="card-zoom bg-ivory rounded-2xl overflow-hidden border border-gold-200/80 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
+                <div class="card-zoom bg-ivory rounded-2xl overflow-hidden border border-gold-200/80 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group min-w-0">
                     <div>
-                        <div class="relative h-44 sm:h-72 overflow-hidden bg-stone-200">
+                        <div class="relative h-40 sm:h-72 overflow-hidden bg-stone-200">
                             <img id="prod-img-${item.id}" src="${item.image}" 
                                  onerror="this.src='https://placehold.co/600x750/1f1e1c/c28a3b?text=${encodeURIComponent(item.title)}'"
                                  alt="${item.title}" class="zoom-img w-full h-full object-cover">
@@ -1579,19 +1588,19 @@
                                 ${item.badge}
                             </span>
                         </div>
-                        <div class="p-3 sm:p-5">
-                            <div class="flex flex-wrap items-center justify-between gap-1 text-[10px] sm:text-xs text-gold-700 font-bold uppercase tracking-wider">
+                        <div class="p-2.5 sm:p-5">
+                            <div class="flex flex-wrap items-center justify-between gap-1 text-[9px] sm:text-xs text-gold-700 font-bold uppercase tracking-wider">
                                 <span class="truncate">${item.category === 'men' ? "Men's" : item.category === 'women' ? "Women's" : "Family"}</span>
-                                <span class="text-xs sm:text-sm text-charcoal-900">${item.price}</span>
+                                <span class="text-[11px] sm:text-sm text-charcoal-900 font-extrabold">${item.price}</span>
                             </div>
-                            <h3 class="font-serif-luxury text-sm sm:text-lg font-bold text-charcoal-900 mt-1 leading-snug line-clamp-2">${item.title}</h3>
-                            <p class="text-[11px] sm:text-xs text-stone-600 mt-1.5 sm:mt-2 leading-snug sm:leading-relaxed line-clamp-2">${item.desc}</p>
+                            <h3 class="font-serif-luxury text-xs sm:text-lg font-bold text-charcoal-900 mt-1 leading-snug line-clamp-2">${item.title}</h3>
+                            <p class="text-[10px] sm:text-xs text-stone-600 mt-1 sm:mt-2 leading-snug sm:leading-relaxed line-clamp-2">${item.desc}</p>
                         </div>
                     </div>
-                    <div class="px-3 pb-3 sm:px-5 sm:pb-5 pt-1 flex items-center gap-2">
-                        <button onclick="openCustomizerModal('${item.id}')" class="w-full py-2 sm:py-2.5 rounded-xl bg-charcoal-900 hover:bg-gold-600 text-white text-[11px] sm:text-xs font-semibold tracking-wider uppercase transition flex items-center justify-center gap-1.5">
+                    <div class="px-2.5 pb-2.5 sm:px-5 sm:pb-5 pt-1 flex items-center">
+                        <button onclick="openCustomizerModal('${item.id}')" class="w-full py-2 sm:py-2.5 px-2 rounded-xl bg-charcoal-900 hover:bg-gold-600 text-white text-[10px] sm:text-xs font-semibold tracking-normal sm:tracking-wider uppercase transition flex items-center justify-center gap-1">
                             <i class="fa-solid fa-sliders"></i>
-                            <span>Order</span>
+                            <span class="truncate">Customize & Order</span>
                         </button>
                     </div>
                 </div>
