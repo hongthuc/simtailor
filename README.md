@@ -119,38 +119,38 @@
 <body class="antialiased selection:bg-gold-500 selection:text-white">
 
     <!-- ================= TOP ANNOUNCEMENT & CONTACT BAR ================= -->
-    <div class="bg-charcoal-950 text-gold-100 text-xs border-b border-gold-900/40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-2">
+    <div class="bg-charcoal-950 text-gold-100 text-[11px] sm:text-xs border-b border-gold-900/40">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-2">
             <!-- Left Contact Info -->
-            <div class="flex flex-wrap items-center gap-4 sm:gap-6">
-                <a href="https://simtailorhoian.com" class="flex items-center gap-1.5 text-gold-400 font-semibold tracking-wide hover:text-gold-300 transition">
-                    <i class="fa-solid fa-globe"></i>
+            <div class="flex flex-wrap items-center gap-x-3 sm:gap-x-6 gap-y-1">
+                <a href="https://simtailorhoian.com" class="inline-flex items-center gap-1.5 text-gold-400 font-semibold tracking-wide hover:text-gold-300 transition">
+                    <i class="fa-solid fa-globe text-[11px]"></i>
                     <span>simtailorhoian.com</span>
                 </a>
-                <a href="#contact" class="flex items-center gap-1.5 hover:text-gold-300 transition">
-                    <i class="fa-solid fa-location-dot text-gold-500"></i>
-                    <span>23 Lê Lợi, Hội An, Đà Nẵng</span>
+                <a href="#contact" class="inline-flex items-center gap-1.5 hover:text-gold-300 transition">
+                    <i class="fa-solid fa-location-dot text-gold-500 text-[11px]"></i>
+                    <span>23 Lê Lợi, Hội An</span>
                 </a>
-                <a href="tel:0906440883" class="flex items-center gap-1.5 hover:text-gold-300 transition font-medium">
-                    <i class="fa-solid fa-phone-volume text-gold-500"></i>
-                    <span>0906.440.883 (+84 906 440 883)</span>
+                <a href="tel:0906440883" class="inline-flex items-center gap-1.5 hover:text-gold-300 transition font-medium">
+                    <i class="fa-solid fa-phone-volume text-gold-500 text-[11px]"></i>
+                    <span>0906.440.883</span>
                 </a>
-                <a href="mailto:v.thuysim@gmail.com" class="hidden md:flex items-center gap-1.5 hover:text-gold-300 transition">
+                <a href="mailto:v.thuysim@gmail.com" class="hidden md:inline-flex items-center gap-1.5 hover:text-gold-300 transition">
                     <i class="fa-solid fa-envelope text-gold-500"></i>
                     <span>v.thuysim@gmail.com</span>
                 </a>
             </div>
 
             <!-- Right Utilities: Fanpage Link & Language Toggle -->
-            <div class="flex items-center gap-3 ml-auto">
+            <div class="flex items-center gap-2.5 shrink-0">
                 <a href="https://www.facebook.com/DungDesignTailor/" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-600/20 text-blue-300 border border-blue-500/30 hover:bg-blue-600/30 transition">
                     <i class="fa-brands fa-facebook"></i>
                     <span>FB: Sim Tailor (Dũng Design)</span>
                 </a>
                 <!-- Language Switcher -->
-                <div class="inline-flex rounded-full bg-charcoal-800 p-0.5 border border-gold-800/50">
-                    <button id="lang-en" onclick="setLanguage('en')" class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold transition bg-gold-600 text-white">EN</button>
-                    <button id="lang-vi" onclick="setLanguage('vi')" class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold transition text-gold-200 hover:text-white">VI</button>
+                <div class="inline-flex items-center rounded-full bg-charcoal-800 p-0.5 border border-gold-500/40">
+                    <button id="lang-en" onclick="setLanguage('en')" class="px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold transition bg-gold-600 text-white">EN</button>
+                    <button id="lang-vi" onclick="setLanguage('vi')" class="px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold transition text-gold-200 hover:text-white">VI</button>
                 </div>
             </div>
         </div>
@@ -161,13 +161,30 @@
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20 gap-2">
                 
-                <!-- Brand Logo (Đã xóa dòng chữ phụ bị lỗi tràn dọc trên máy tính & cố định khung tròn) -->
-                <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
-                    <div class="w-11 h-11 sm:w-12 sm:h-12 shrink-0 rounded-full bg-charcoal-900 border-2 border-gold-500 flex flex-col items-center justify-center text-gold-400 shadow-md group-hover:bg-gold-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-scissors text-sm sm:text-base"></i>
-                        <span class="text-[7px] tracking-widest uppercase font-bold mt-0.5 leading-none">EST. 2011</span>
+                <!-- Brand Logo (Biểu tượng huy hiệu tròn cân đối tuyệt đối + Chữ căn giữa thẳng hàng) -->
+                <a href="#" class="inline-flex items-center gap-2.5 sm:gap-3.5 group shrink-0">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-charcoal-900 border-2 border-gold-500 flex items-center justify-center shadow-md group-hover:border-gold-400 transition shrink-0">
+                        <svg viewBox="0 0 64 64" class="w-8 h-8 sm:w-9 sm:h-9 block">
+                            <!-- Vòng nguyệt quế / chỉ thêu золотой đối xứng -->
+                            <circle cx="32" cy="32" r="28" fill="none" stroke="#c28a3b" stroke-width="1" stroke-dasharray="3 2.5" opacity="0.75"/>
+                            <circle cx="32" cy="32" r="24" fill="none" stroke="#cea059" stroke-width="0.6" opacity="0.4"/>
+                            <!-- Biểu tượng Kéo May Đo Bespoke nằm chính tâm hình tròn -->
+                            <g transform="translate(32, 32)" fill="none" stroke="#e5c17c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="-7" cy="-6" r="4.8"/>
+                                <circle cx="-7" cy="6" r="4.8"/>
+                                <line x1="-2.5" y1="-3" x2="11" y2="6.5"/>
+                                <line x1="-2.5" y1="3" x2="11" y2="-6.5"/>
+                                <circle cx="1.5" cy="0" r="1.2" fill="#e5c17c" stroke="none"/>
+                            </g>
+                        </svg>
                     </div>
-                    <span class="font-serif-luxury text-xl sm:text-2xl xl:text-3xl font-bold tracking-wider text-charcoal-900 whitespace-nowrap shrink-0">SIM TAILOR</span>
+                    <div class="flex flex-col justify-center">
+                        <span class="font-serif-luxury text-lg sm:text-2xl xl:text-[26px] font-bold tracking-wider text-charcoal-900 whitespace-nowrap leading-none">SIM TAILOR</span>
+                        <div class="flex items-center gap-1.5 mt-1">
+                            <span class="w-3 sm:w-4 h-[1px] bg-gold-500"></span>
+                            <span class="text-[8.5px] sm:text-[10px] uppercase tracking-[0.18em] text-gold-700 font-bold whitespace-nowrap leading-none">HỘI AN • EST. 2011</span>
+                        </div>
+                    </div>
                 </a>
 
                 <!-- Desktop Navigation Menu (Exact structure of simonthetailor.com) -->
@@ -210,16 +227,16 @@
                 </nav>
 
                 <!-- Action Buttons: Search, Bespoke Bag & Book Appointment -->
-                <div class="flex items-center gap-2.5 sm:gap-3">
+                <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
                     <!-- Search Toggle -->
-                    <button onclick="toggleSearchModal()" class="w-10 h-10 rounded-full bg-stone-100 hover:bg-gold-100 text-charcoal-800 hover:text-gold-700 flex items-center justify-center transition" title="Search">
-                        <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                    <button onclick="toggleSearchModal()" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-stone-100 hover:bg-gold-100 text-charcoal-800 hover:text-gold-700 flex items-center justify-center transition border border-stone-200/80" title="Search">
+                        <i class="fa-solid fa-magnifying-glass text-xs sm:text-sm"></i>
                     </button>
 
                     <!-- Custom Order Bag -->
-                    <button onclick="toggleOrderDrawer()" class="relative w-10 h-10 rounded-full bg-stone-100 hover:bg-gold-100 text-charcoal-800 hover:text-gold-700 flex items-center justify-center transition" title="Your Bespoke Order List">
-                        <i class="fa-solid fa-bag-shopping text-sm"></i>
-                        <span id="cart-badge" class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-gold-600 text-white text-[10px] font-bold flex items-center justify-center">0</span>
+                    <button onclick="toggleOrderDrawer()" class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-stone-100 hover:bg-gold-100 text-charcoal-800 hover:text-gold-700 flex items-center justify-center transition border border-stone-200/80" title="Your Bespoke Order List">
+                        <i class="fa-solid fa-bag-shopping text-xs sm:text-sm"></i>
+                        <span id="cart-badge" class="absolute -top-1 -right-1 w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gold-600 text-white text-[9px] sm:text-[10px] font-bold flex items-center justify-center shadow">0</span>
                     </button>
 
                     <!-- Book Fitting CTA -->
@@ -229,8 +246,8 @@
                     </a>
 
                     <!-- Mobile Hamburger -->
-                    <button onclick="toggleMobileMenu()" class="lg:hidden w-10 h-10 rounded-full bg-charcoal-900 text-gold-400 flex items-center justify-center">
-                        <i id="mobile-menu-icon" class="fa-solid fa-bars"></i>
+                    <button onclick="toggleMobileMenu()" class="lg:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-charcoal-900 text-gold-400 flex items-center justify-center shadow-sm">
+                        <i id="mobile-menu-icon" class="fa-solid fa-bars text-xs sm:text-sm"></i>
                     </button>
                 </div>
             </div>
@@ -353,18 +370,18 @@
                 </div>
             </div>
 
-            <!-- Slider Controls -->
-            <div class="absolute bottom-6 right-6 z-30 flex items-center gap-3">
-                <button onclick="prevSlide()" class="w-11 h-11 rounded-full bg-black/50 hover:bg-gold-600 text-white border border-white/20 flex items-center justify-center transition">
-                    <i class="fa-solid fa-chevron-left"></i>
+            <!-- Slider Controls (Đặt bên trái để không bị đè lên cụm nút liên hệ nổi bên phải) -->
+            <div class="absolute bottom-14 sm:bottom-16 left-4 sm:left-8 z-30 flex items-center gap-2.5">
+                <button onclick="prevSlide()" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/50 hover:bg-gold-600 text-white border border-white/25 flex items-center justify-center transition backdrop-blur-sm">
+                    <i class="fa-solid fa-chevron-left text-xs"></i>
                 </button>
-                <div class="flex items-center gap-2 px-3 py-2 rounded-full bg-black/40 backdrop-blur-sm">
+                <div class="flex items-center gap-2 px-3 py-2 rounded-full bg-black/45 backdrop-blur-sm border border-white/15">
                     <button onclick="goToSlide(0)" id="dot-0" class="w-6 h-2 rounded-full bg-gold-500 transition-all"></button>
                     <button onclick="goToSlide(1)" id="dot-1" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all"></button>
                     <button onclick="goToSlide(2)" id="dot-2" class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all"></button>
                 </div>
-                <button onclick="nextSlide()" class="w-11 h-11 rounded-full bg-black/50 hover:bg-gold-600 text-white border border-white/20 flex items-center justify-center transition">
-                    <i class="fa-solid fa-chevron-right"></i>
+                <button onclick="nextSlide()" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/50 hover:bg-gold-600 text-white border border-white/25 flex items-center justify-center transition backdrop-blur-sm">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
                 </button>
             </div>
         </div>
@@ -1228,34 +1245,51 @@
         </div>
     </footer>
 
-    <!-- ================= FLOATING QUICK CONTACT BAR (ZALO / WHATSAPP / PHONE - LIKE SIMONTHETAILOR) ================= -->
-    <div class="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-2.5">
+    <!-- ================= FLOATING QUICK CONTACT BAR (THIẾT KẾ ĐỒNG BỘ, CĂN GIỮA TÂM TUYỆT ĐỐI) ================= -->
+    <div class="fixed bottom-4 right-3.5 sm:bottom-6 sm:right-5 z-40 flex flex-col items-end gap-2.5">
         <!-- Messenger / Fanpage -->
         <a href="https://www.facebook.com/DungDesignTailor/" target="_blank" rel="noopener noreferrer"
-           class="group flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white p-3 rounded-full shadow-lg transition-all" title="Facebook Fanpage Sim Tailor">
-            <i class="fa-brands fa-facebook-messenger text-xl w-6 h-6 flex items-center justify-center"></i>
-            <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 text-xs font-semibold whitespace-nowrap">FB Sim Tailor</span>
+           class="group relative w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-tr from-blue-700 to-blue-500 text-white shadow-lg shadow-blue-950/30 border-2 border-white/90 flex items-center justify-center hover:scale-110 transition-transform"
+           title="Facebook Fanpage Sim Tailor">
+            <i class="fa-brands fa-facebook-messenger text-lg sm:text-xl leading-none"></i>
+            <span class="pointer-events-none absolute right-full mr-3 px-3 py-1.5 rounded-xl bg-charcoal-900/95 text-white text-xs font-semibold whitespace-nowrap opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all shadow-md hidden sm:block">
+                FB: Sim Tailor
+            </span>
         </a>
 
-        <!-- Zalo 0906.440.883 -->
+        <!-- Zalo 0906.440.883 (Biểu tượng SVG chuẩn, không bị tràn chữ) -->
         <a href="https://zalo.me/0906440883" target="_blank" rel="noopener noreferrer"
-           class="group flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-white p-3 rounded-full shadow-lg transition-all" title="Chat Zalo 0906.440.883">
-            <span class="font-extrabold text-xs w-6 h-6 flex items-center justify-center bg-white text-sky-600 rounded-full">Zalo</span>
-            <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 text-xs font-semibold whitespace-nowrap">0906.440.883</span>
+           class="group relative w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-tr from-sky-600 to-cyan-400 text-white shadow-lg shadow-sky-950/30 border-2 border-white/90 flex items-center justify-center hover:scale-110 transition-transform"
+           title="Chat Zalo 0906.440.883">
+            <svg viewBox="0 0 40 40" class="w-7 h-7 sm:w-8 sm:h-8 block">
+                <path d="M20 5C11.2 5 4 11.1 4 18.6c0 4.2 2.3 8 5.9 10.5-.3 1.6-1.1 3.7-1.2 3.9-.2.4.2.7.6.5 1.7-.7 4.4-2.1 5.8-2.9 1.5.4 3.2.6 4.9.6 8.8 0 16-6.1 16-13.6S28.8 5 20 5z" fill="#ffffff"/>
+                <text x="20" y="22.5" text-anchor="middle" fill="#0284c7" font-family="Inter, Arial, sans-serif" font-size="10.5" font-weight="800" letter-spacing="-0.3">Zalo</text>
+            </svg>
+            <span class="pointer-events-none absolute right-full mr-3 px-3 py-1.5 rounded-xl bg-charcoal-900/95 text-white text-xs font-semibold whitespace-nowrap opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all shadow-md hidden sm:block">
+                Zalo: 0906.440.883
+            </span>
         </a>
 
         <!-- WhatsApp +84906440883 -->
         <a href="https://wa.me/84906440883" target="_blank" rel="noopener noreferrer"
-           class="group flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white p-3 rounded-full shadow-lg transition-all" title="WhatsApp +84 906 440 883">
-            <i class="fa-brands fa-whatsapp text-xl w-6 h-6 flex items-center justify-center"></i>
-            <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 text-xs font-semibold whitespace-nowrap">WhatsApp</span>
+           class="group relative w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-tr from-emerald-600 to-green-500 text-white shadow-lg shadow-green-950/30 border-2 border-white/90 flex items-center justify-center hover:scale-110 transition-transform"
+           title="WhatsApp +84 906 440 883">
+            <i class="fa-brands fa-whatsapp text-xl sm:text-2xl leading-none"></i>
+            <span class="pointer-events-none absolute right-full mr-3 px-3 py-1.5 rounded-xl bg-charcoal-900/95 text-white text-xs font-semibold whitespace-nowrap opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all shadow-md hidden sm:block">
+                WhatsApp: +84 906 440 883
+            </span>
         </a>
 
-        <!-- Direct Phone Call -->
+        <!-- Direct Phone Call (Nút Hotline sang trọng, gọn gàng) -->
         <a href="tel:0906440883"
-           class="pulse-gold flex items-center gap-2.5 bg-gold-600 hover:bg-gold-500 text-white px-4 py-3 rounded-full shadow-xl transition-all">
-            <i class="fa-solid fa-phone-volume text-base"></i>
-            <span class="text-xs font-bold tracking-wider">0906.440.883</span>
+           class="pulse-gold flex items-center gap-2 bg-gradient-to-r from-charcoal-900 via-charcoal-800 to-charcoal-900 hover:from-gold-700 hover:to-gold-500 text-white pl-1.5 pr-3.5 py-1.5 rounded-full shadow-xl border-2 border-gold-400 transition-all">
+            <span class="w-8 h-8 rounded-full bg-gold-500 text-white flex items-center justify-center shrink-0 shadow">
+                <i class="fa-solid fa-phone-volume text-xs"></i>
+            </span>
+            <div class="flex flex-col leading-tight text-left">
+                <span class="text-[8px] uppercase tracking-widest text-gold-300 font-semibold">Hotline 24/7</span>
+                <span class="text-xs font-bold tracking-wider text-white">0906.440.883</span>
+            </div>
         </a>
     </div>
 
